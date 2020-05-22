@@ -35,9 +35,9 @@ while True:
     # omxplayer -o hdmi <file>
     # omxplayer -o both <file>
     if not button1.value:
-player.play()
+#player.play()
 Player3.play()
   
     if not button2.value:
-player3.stop()
+#player3.stop()
 Player2.play()
