@@ -20,6 +20,17 @@ player2 = OMXPlayer(VIDEO_2_PATH,
 dbus_name='org.mpris.MediaPlayer2.omxplayer1')
 player3 = OMXPlayer(VIDEO_3_PATH,
 dbus_name='org.mpris.MediaPlayer2.omxplayer1')
+player0 = OMXPlayer('VIDEO_1_PATH', args=['--no-osd'], dbus_name='org.mpris.MediaPlayer2.omxplayer' + str(0))
+player0.pause()
+player0.hide_video()
+
+player1 = OMXPlayer('VIDEO_2_PATH', args=['--no-osd'], dbus_name='org.mpris.MediaPlayer2.omxplayer' + str(0))
+player1.pause()
+player1.hide_video()
+
+player2 = OMXPlayer('VIDEO_3_PATH', args=['--no-osd'], dbus_name='org.mpris.MediaPlayer2.omxplayer' + str(0))
+player2.pause()
+player2.hide_video()
 print("press a button!")
 
 button1 = digitalio.DigitalInOut(board.D23)
@@ -35,9 +46,9 @@ while True:
     # omxplayer -o hdmi <file>
     # omxplayer -o both <file>
     if not button1.value:
-#player.play()
-Player3.play()
+player0.play()
+Player2.play()
   
     if not button2.value:
-#player3.stop()
-Player2.play()
+player2.stop()
+Player1.play()
