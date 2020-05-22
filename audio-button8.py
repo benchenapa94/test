@@ -10,9 +10,9 @@ import os
 import board
 import digitalio
 logging.basicConfig(level=logging.INFO)
-VIDEO_1_PATH = "bp.mp3"
-VIDEO_2_PATH = "bd.mp3"
-VIDEO_3_PATH = "bomb.mp3"
+VIDEO_1_PATH = ".\bp.mp3"
+VIDEO_2_PATH = ".\bd.mp3"
+VIDEO_3_PATH = ".\bomb.mp3"
 player_log = logging.getLogger("Player 1")
 player = OMXPlayer(VIDEO_1_PATH,
 dbus_name='org.mpris.MediaPlayer2.omxplayer1')
