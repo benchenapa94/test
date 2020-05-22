@@ -18,7 +18,7 @@ soundChannelA = pygame.mixer.Channel(1)
 soundChannelB = pygame.mixer.Channel(2)
 soundChannelC = pygame.mixer.Channel(3)
 
-print "Sampler Ready."
+print ("Sampler Ready.")
 
 while True:
    try:
