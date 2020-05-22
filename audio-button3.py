@@ -35,14 +35,9 @@ while True:
     # omxplayer -o hdmi <file>
     # omxplayer -o both <file>
     if not button1.value:
-
-
-
-time.sleep(3)
 player.playEvent += lambda _: player_log.info("Play")
 player3.playEvent += lambda _: player_log.info("play")
   
     if not button2.value:
 player3.playEvent += lambda _: player_log.info("stop")
 player2.playEvent += lambda _: player_log.info("play")
-    time.sleep(.25)
