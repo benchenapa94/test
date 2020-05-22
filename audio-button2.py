@@ -37,9 +37,8 @@ while True:
     if not button1.value:
 
 
-print("planted")
+
 time.sleep(3)
-print("siren started")
 player.playEvent += lambda _: player_log.info("Play")
 player3.playEvent += lambda _: player_log.info("play")
   
