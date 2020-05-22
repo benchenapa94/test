@@ -18,7 +18,7 @@ button2.direction = digitalio.Direction.INPUT
 button2.pull = digitalio.Pull.UP
 while True:
 global playProcess
-    # omxplayer -o local <file>
+     omxplayer -o local <file>
     # omxplayer -o hdmi <file>
     # omxplayer -o both <file>
     if not button1.value:
